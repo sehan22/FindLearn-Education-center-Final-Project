@@ -18,7 +18,7 @@ public class AppInitializer extends Application {
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/lk/ijse/apexeducationcenter/view/ApexLoginForm.fxml"))));
         primaryStage.setTitle("Apex Education System");
 
-        Image image = new Image("/lk/ijse/apexeducationcenter/assets/images/Apexlogo-1.png");
+        Image image = new Image("/lk/ijse/apexeducationcenter/view/assets/images/Apexlogo-1.png");
         primaryStage.getIcons().add(image);
         primaryStage.centerOnScreen();
         primaryStage.initStyle(StageStyle.UNDECORATED);

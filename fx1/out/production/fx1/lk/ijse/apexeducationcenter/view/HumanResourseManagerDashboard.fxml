@@ -17,13 +17,13 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.HumanResourseManagerDashboardController">
+<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../view/assets/css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.HumanResourseManagerDashboardController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="1042.0" prefWidth="485.0" style="-fx-background-color: FFD2A9;">
          <children>
-            <ImageView fitHeight="95.0" fitWidth="315.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true" x="-10.0" y="19.0">
+            <ImageView fitHeight="164.0" fitWidth="250.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" translateX="47.0" x="-10.0" y="19.0">
                <image>
-                  <Image url="@../assets/images/Apexlogo-1%20-%20Copy.png" />
+                  <Image url="@assets/images/FindLearn.png" />
                </image>
                <VBox.margin>
                   <Insets right="85.0" top="48.0" />
@@ -37,14 +37,14 @@
                   <Insets />
                </VBox.margin>
             </Label>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="89.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="89.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-home-64.png" />
+                        <Image url="@../view/assets/images/icons8-home-64.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -52,14 +52,14 @@
                   <Insets />
                </VBox.margin>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="114.0" layoutY="215.0" onAction="#teacherOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="TEACHER" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="114.0" layoutY="215.0" onAction="#teacherOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="TEACHER" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-training-50.png" />
+                        <Image url="@../view/assets/images/icons8-training-50.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -70,14 +70,14 @@
                   <Insets right="55.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="325.0" onAction="#studentOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="STUDENT" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="325.0" onAction="#studentOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="STUDENT" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-teaching-50.png" />
+                        <Image url="@../view/assets/images/icons8-teaching-50.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -88,14 +88,14 @@
                   <Insets right="64.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="435.0" onAction="#employeeOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="EMPLOYEE" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="435.0" onAction="#employeeOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="EMPLOYEE" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-manager-50.png" />
+                        <Image url="@../view/assets/images/icons8-manager-50.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -106,14 +106,14 @@
                   <Insets right="34.0" />
                </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0">
                      <image>
-                        <Image url="@../assets/images/icons8-logout-64.png" />
+                        <Image url="@../view/assets/images/icons8-logout-64.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -125,13 +125,13 @@
       </VBox>
       <AnchorPane layoutX="480.0" layoutY="-4.0" prefHeight="1046.0" prefWidth="1442.0">
          <children>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1239.0" layoutY="786.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="EXIT">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1239.0" layoutY="786.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="EXIT">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font></JFXButton>
             <ImageView fitHeight="174.0" fitWidth="234.0" layoutX="1206.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/images/icons8-admin-settings-male-96.png" />
+                  <Image url="@../view/assets/images/icons8-admin-settings-male-96.png" />
                </image>
             </ImageView>
             <Label layoutX="1192.0" layoutY="333.0" text="Ranaweera">
@@ -144,12 +144,12 @@
                   <Font size="19.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1240.0" layoutY="638.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="VIEW">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1240.0" layoutY="638.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="VIEW">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1238.0" layoutY="488.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="UPDATE">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1238.0" layoutY="488.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="UPDATE">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
@@ -224,7 +224,7 @@
                                  <graphic>
                                     <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                        <image>
-                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                          <Image url="@../view/assets/images/icons8-search-64.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -350,7 +350,7 @@
                                  <graphic>
                                     <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                        <image>
-                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                          <Image url="@../view/assets/images/icons8-search-64.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -450,7 +450,7 @@
                                  <graphic>
                                     <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                        <image>
-                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                          <Image url="@../view/assets/images/icons8-search-64.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -506,17 +506,17 @@
                         <AnchorPane layoutX="59.0" layoutY="181.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;">
                            <children>
                               <Separator layoutX="147.0" layoutY="105.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="5.0" />
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateTeacherOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Teacher">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateTeacherOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Teacher">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateStudentOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Student">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateStudentOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Student">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateEmployeeOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Employee">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateEmployeeOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Employee">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font>
@@ -533,7 +533,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -630,7 +630,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -737,7 +737,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>

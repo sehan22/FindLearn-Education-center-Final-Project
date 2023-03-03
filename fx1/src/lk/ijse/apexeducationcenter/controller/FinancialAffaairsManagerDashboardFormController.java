@@ -21,9 +21,9 @@ import lk.ijse.apexeducationcenter.bo.BOFactory;
 import lk.ijse.apexeducationcenter.bo.custom.FinancialAffairsDashboardBO;
 import lk.ijse.apexeducationcenter.db.DBConnection;
 import lk.ijse.apexeducationcenter.dto.*;
-import lk.ijse.apexeducationcenter.to.CoursePayment;
-import lk.ijse.apexeducationcenter.to.EmployeeSalary;
-import lk.ijse.apexeducationcenter.to.TeacherSalary;
+import lk.ijse.apexeducationcenter.entity.CoursePayment;
+import lk.ijse.apexeducationcenter.entity.EmployeeSalary;
+import lk.ijse.apexeducationcenter.entity.TeacherSalary;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;

@@ -23,9 +23,9 @@ import lk.ijse.apexeducationcenter.db.DBConnection;
 import lk.ijse.apexeducationcenter.dto.EmployeeDTO;
 import lk.ijse.apexeducationcenter.dto.StudentDTO;
 import lk.ijse.apexeducationcenter.dto.TeacherDTO;
-import lk.ijse.apexeducationcenter.to.Employee;
-import lk.ijse.apexeducationcenter.to.Student;
-import lk.ijse.apexeducationcenter.to.Teacher;
+import lk.ijse.apexeducationcenter.entity.Employee;
+import lk.ijse.apexeducationcenter.entity.Student;
+import lk.ijse.apexeducationcenter.entity.Teacher;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.view.JasperViewer;
 

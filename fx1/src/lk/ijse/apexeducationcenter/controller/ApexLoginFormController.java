@@ -1,13 +1,14 @@
 package lk.ijse.apexeducationcenter.controller;
 
-import animatefx.animation.*;
+import animatefx.animation.BounceIn;
+import animatefx.animation.FadeIn;
+import animatefx.animation.ZoomIn;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -27,8 +28,6 @@ import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import lk.ijse.apexeducationcenter.util.Navigation;
-import lk.ijse.apexeducationcenter.util.Routes;
 import org.controlsfx.control.Notifications;
 
 import java.awt.*;
@@ -78,7 +77,7 @@ public class ApexLoginFormController {
         shadow.setSpread(0.5);
         shadow.setRadius(1);
 
-        lblapexEduCen.setEffect(shadow);
+        //lblapexEduCen.setEffect(shadow);
 
     }
 

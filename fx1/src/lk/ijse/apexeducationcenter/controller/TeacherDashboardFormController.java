@@ -19,8 +19,8 @@ import lk.ijse.apexeducationcenter.bo.custom.TeacherDashboardBO;
 import lk.ijse.apexeducationcenter.db.DBConnection;
 import lk.ijse.apexeducationcenter.dto.ExamDTO;
 import lk.ijse.apexeducationcenter.dto.ExamResultDTO;
-import lk.ijse.apexeducationcenter.to.Exam;
-import lk.ijse.apexeducationcenter.to.ExamResult;
+import lk.ijse.apexeducationcenter.entity.Exam;
+import lk.ijse.apexeducationcenter.entity.ExamResult;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;

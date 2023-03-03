@@ -18,13 +18,13 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.AdminDashboardController">
+<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../view/assets/css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.AdminDashboardController">
    <children>
       <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="1041.0" prefWidth="485.0" style="-fx-background-color: FFD2A9;">
          <children>
-            <ImageView fitHeight="95.0" fitWidth="315.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true" x="-10.0" y="19.0">
+            <ImageView fitHeight="210.0" fitWidth="242.0" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" translateX="42.0">
                <image>
-                  <Image url="@../assets/images/Apexlogo-1%20-%20Copy.png" />
+                  <Image url="@assets/images/FindLearn.png" />
                </image>
                <VBox.margin>
                   <Insets right="85.0" top="48.0" />
@@ -38,14 +38,14 @@
                   <Insets />
                </VBox.margin>
             </Label>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-home-64.png" />
+                        <Image url="@../view/assets/images/icons8-home-64.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -53,14 +53,14 @@
                   <Insets />
                </VBox.margin>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="215.0" onAction="#coursesOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="COURSES" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="215.0" onAction="#coursesOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="COURSES" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-knowledge-sharing-50.png" />
+                        <Image url="@../view/assets/images/icons8-knowledge-sharing-50.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -71,14 +71,14 @@
                   <Insets right="55.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="325.0" onAction="#batchOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="BATCH" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="325.0" onAction="#batchOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="BATCH" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-teaching-50.png" />
+                        <Image url="@../view/assets/images/icons8-teaching-50.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -89,14 +89,14 @@
                   <Insets right="89.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="435.0" onAction="#subjectOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="SUBJECTS" textFill="#7f8c8d" translateY="76.0">
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="435.0" onAction="#subjectOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="SUBJECTS" textFill="#7f8c8d" translateY="76.0">
                <font>
                   <Font name="System Bold" size="30.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
                      <image>
-                        <Image url="@../assets/images/icons8-course-assign-64.png" />
+                        <Image url="@../view/assets/images/icons8-course-assign-64.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -107,14 +107,14 @@
                   <Insets right="50.0" />
                </padding>
             </JFXButton>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0">
                      <image>
-                        <Image url="@../assets/images/icons8-logout-64.png" />
+                        <Image url="@../view/assets/images/icons8-logout-64.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -128,10 +128,10 @@
          <children>
             <ImageView fitHeight="174.0" fitWidth="234.0" layoutX="1207.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" translateX="14.0">
                <image>
-                  <Image url="@../assets/images/pngwing.com%20(1).png" />
+                  <Image url="@../view/assets/images/pngwing.com%20(1).png" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1243.0" layoutY="812.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="EXIT">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1243.0" layoutY="812.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="EXIT">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font></JFXButton>
@@ -145,12 +145,12 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1244.0" layoutY="664.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="VIEW">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1244.0" layoutY="664.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="VIEW">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1242.0" layoutY="514.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="UPDATE">
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1242.0" layoutY="514.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../view/assets/css/style.css" text="UPDATE">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
@@ -213,7 +213,7 @@
                                  <graphic>
                                     <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                        <image>
-                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                          <Image url="@../view/assets/images/icons8-search-64.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -313,7 +313,7 @@
                                  <graphic>
                                     <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                        <image>
-                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                          <Image url="@../view/assets/images/icons8-search-64.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -406,7 +406,7 @@
                                  </font>
                               </JFXTextField>
                               <TextField focusTraversable="false" layoutX="294.0" layoutY="353.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." text="Batch Id...." />
-                              <JFXComboBox fx:id="cmbCourseIds" focusTraversable="false" layoutX="230.0" layoutY="160.0" onAction="#selectCmbItemOnAction" prefHeight="48.0" prefWidth="187.0" promptText="Select Course Id..." styleClass="combo-box" stylesheets="@../css/TableStyle.css" />
+                              <JFXComboBox fx:id="cmbCourseIds" focusTraversable="false" layoutX="230.0" layoutY="160.0" onAction="#selectCmbItemOnAction" prefHeight="48.0" prefWidth="187.0" promptText="Select Course Id..." styleClass="combo-box" stylesheets="@../view/assets/css/TableStyle.css" />
                               <JFXTextField fx:id="txtCourseName" layoutX="609.0" layoutY="162.0" prefHeight="44.0" prefWidth="315.0">
                                  <font>
                                     <Font size="20.0" />
@@ -428,7 +428,7 @@
                            <graphic>
                               <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                  <image>
-                                    <Image url="@../assets/images/icons8-search-64.png" />
+                                    <Image url="@../view/assets/images/icons8-search-64.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -446,7 +446,7 @@
                               </LinearGradient>
                            </ripplerFill>
                         </JFXButton>
-                        <TableView fx:id="tblViewAllSubjects" focusTraversable="false" layoutX="99.0" layoutY="460.0" prefHeight="427.0" prefWidth="882.0" stylesheets="@../css/TableStyle.css">
+                        <TableView fx:id="tblViewAllSubjects" focusTraversable="false" layoutX="99.0" layoutY="460.0" prefHeight="427.0" prefWidth="882.0" stylesheets="@../view/assets/css/TableStyle.css">
                            <columns>
                               <TableColumn fx:id="colSubjectId" prefWidth="140.0" text="Subject Id" />
                               <TableColumn fx:id="colSubjectName" prefWidth="140.0" text="Course Id" />
@@ -470,15 +470,15 @@
                         <AnchorPane layoutX="59.0" layoutY="181.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;">
                            <children>
                               <Separator layoutX="147.0" layoutY="105.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="5.0" />
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateCourseOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Course">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateCourseOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Course">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font></JFXButton>
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateBatchOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Batch">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateBatchOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Batch">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font></JFXButton>
-                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateSubjectOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Subject">
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateSubjectOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../view/assets/css/style1.css" text="Subject">
                                  <font>
                                     <Font name="Cambria Bold" size="14.0" />
                                  </font></JFXButton>
@@ -494,7 +494,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -581,7 +581,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>
@@ -678,7 +678,7 @@
                                        <graphic>
                                           <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
                                              <image>
-                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                                <Image url="@../view/assets/images/icons8-search-64.png" />
                                              </image>
                                           </ImageView>
                                        </graphic>

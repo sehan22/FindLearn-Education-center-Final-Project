@@ -3,7 +3,6 @@ package lk.ijse.apexeducationcenter.dao.custom.impl;
 import lk.ijse.apexeducationcenter.dao.SQLUtil;
 import lk.ijse.apexeducationcenter.dao.custom.BatchDAO;
 import lk.ijse.apexeducationcenter.entity.Batch;
-import lk.ijse.apexeducationcenter.util.CrudUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -55,6 +54,6 @@ public class BatchDAOImpl implements BatchDAO {
     }
 
     public boolean DecSeat(String batchId) throws SQLException, ClassNotFoundException {
-        return CrudUtil.execute("UPDATE batch SET BatchSeats = BatchSeats - 1 WHERE BatchId = ?" , batchId);
+        return SQLUtil.execute("UPDATE batch SET BatchSeats = BatchSeats - 1 WHERE BatchId = ?" , batchId);
     }
 }

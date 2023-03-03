@@ -21,9 +21,9 @@ import lk.ijse.apexeducationcenter.db.DBConnection;
 import lk.ijse.apexeducationcenter.dto.BatchDTO;
 import lk.ijse.apexeducationcenter.dto.CourseDTO;
 import lk.ijse.apexeducationcenter.dto.SubjectDTO;
-import lk.ijse.apexeducationcenter.to.Batch;
-import lk.ijse.apexeducationcenter.to.Course;
-import lk.ijse.apexeducationcenter.to.Subject;
+import lk.ijse.apexeducationcenter.entity.Batch;
+import lk.ijse.apexeducationcenter.entity.Course;
+import lk.ijse.apexeducationcenter.entity.Subject;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;

@@ -15,7 +15,7 @@ public class ReportsFormController {
     public AnchorPane reportsPaneContext;
 
     public void viewTeacherSalaryReportOnAction(ActionEvent event) {
-        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/reports/teacherSalary.jrxml");
+        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/view/assets/reports/teacherSalary.jrxml");
 
         HashMap<String , Object> hm = new HashMap<>();
 
@@ -33,7 +33,7 @@ public class ReportsFormController {
     }
 
     public void viewEmployeeSplaryReportOnAction(ActionEvent event) {
-        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/reports/employee.jrxml");
+        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/view/assets/reports/employee.jrxml");
 
         HashMap<String , Object> hm = new HashMap<>();
 
@@ -51,7 +51,7 @@ public class ReportsFormController {
     }
 
     public void viewPaymentReportOnAction(ActionEvent event) {
-        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/reports/payment.jrxml");
+        InputStream inputStream = this.getClass().getResourceAsStream("/lk/ijse/apexeducationcenter/view/assets/reports/payment.jrxml");
 
         HashMap<String , Object> hm = new HashMap<>();
 

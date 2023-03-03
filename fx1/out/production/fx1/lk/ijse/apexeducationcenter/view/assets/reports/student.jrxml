@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="368e5bc3-c602-4956-a25f-50b363e2d689">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT * FROM student;]]>
+    </queryString>
+    <field name="StId" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="StId"/>
+        <property name="com.jaspersoft.studio.field.label" value="StId"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <field name="StName" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="StName"/>
+        <property name="com.jaspersoft.studio.field.label" value="StName"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <field name="StAddress" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="StAddress"/>
+        <property name="com.jaspersoft.studio.field.label" value="StAddress"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <field name="StDOB" class="java.sql.Date">
+        <property name="com.jaspersoft.studio.field.name" value="StDOB"/>
+        <property name="com.jaspersoft.studio.field.label" value="StDOB"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <field name="PhoneNumber" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="PhoneNumber"/>
+        <property name="com.jaspersoft.studio.field.label" value="PhoneNumber"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <field name="StEmail" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="StEmail"/>
+        <property name="com.jaspersoft.studio.field.label" value="StEmail"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch"/>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch">
+            <staticText>
+                <reportElement x="40" y="0" width="100" height="30" uuid="a9cef143-0ea8-425c-8c33-746b2873f3cc">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54e0853a-3203-4100-9a49-357c5bacaca5"/>
+                </reportElement>
+                <text><![CDATA[StId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="201" y="0" width="100" height="30" uuid="ace0bd4f-5157-48c7-a1e9-9da9030ea4ab">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="819dc2f1-90ee-4aa5-a700-a3ace73822db"/>
+                </reportElement>
+                <text><![CDATA[StName]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="369" y="0" width="100" height="30" uuid="58c43efd-990c-4d51-8986-a60621489be7">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4fc5a81-9da2-4812-80dd-670a02495d48"/>
+                </reportElement>
+                <text><![CDATA[StAddress]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <textField>
+                <reportElement x="39" y="5" width="100" height="30" uuid="fa7509d4-7067-49aa-8d40-ffe5a26637c3">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54e0853a-3203-4100-9a49-357c5bacaca5"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{StId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="200" y="5" width="100" height="30" uuid="000217f7-4c59-46fe-80fa-eb33f4ee36f1">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="819dc2f1-90ee-4aa5-a700-a3ace73822db"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{StName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="368" y="5" width="100" height="30" uuid="cc69cc0f-6c34-4f5f-a886-852317e002a5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4fc5a81-9da2-4812-80dd-670a02495d48"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{StAddress}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

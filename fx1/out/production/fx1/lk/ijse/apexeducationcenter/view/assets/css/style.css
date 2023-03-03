@@ -1,0 +1,13 @@
+.addBobOk{
+    -fx-background-color: #FFD2A9;
+    -fx-background-radius: 10,10,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+.addBobOk:hover{
+
+    -fx-background-color:#FFC38C;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
