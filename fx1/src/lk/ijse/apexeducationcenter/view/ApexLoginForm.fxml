@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContextPane" prefHeight="531.0" prefWidth="881.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.ApexLoginFormController">
+   <children>
+      <AnchorPane fx:id="sliderpane1" layoutX="-2.0" layoutY="-1.0" prefHeight="600.0" prefWidth="472.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="466.0" fitWidth="469.0" layoutX="3.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/Untitled-2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblapexEduCen" layoutX="34.0" layoutY="53.0" prefHeight="55.0" prefWidth="412.0" text="Apex Education Center" textFill="#ffc38c">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font></Label>
+            <Separator fx:id="spr" layoutX="140.0" layoutY="118.0" prefWidth="200.0" />
+            <JFXButton fx:id="btngoogle" buttonType="RAISED" focusTraversable="false" layoutX="138.0" layoutY="140.0" onAction="#googleOnAction" prefHeight="27.0" prefWidth="54.0" ripplerFill="#ffc38c" styleClass="addBobOk8" stylesheets="@../css/loginFormStyle.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="45.0" translateX="3.0">
+                     <image>
+                        <Image url="@../assets/images/g+.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton fx:id="btnLinkIn" buttonType="RAISED" focusTraversable="false" layoutX="212.0" layoutY="139.0" onAction="#linkedInOnAction" prefHeight="27.0" prefWidth="54.0" ripplerFill="#ffc38c" styleClass="addBobOk8" stylesheets="@../css/loginFormStyle.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="44.0" translateX="2.0">
+                     <image>
+                        <Image url="@../assets/images/in.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnFb" buttonType="RAISED" focusTraversable="false" layoutX="284.0" layoutY="139.0" onAction="#facebbookOnAction" prefHeight="27.0" prefWidth="54.0" ripplerFill="#ffc38c" styleClass="addBobOk8" stylesheets="@../css/loginFormStyle.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="10.0" translateX="2.0" translateY="1.0">
+                     <image>
+                        <Image url="@../assets/images/f.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXTextField fx:id="txtUserName" focusColor="#c25929" focusTraversable="false" labelFloat="true" layoutX="128.0" layoutY="270.0" onKeyPressed="#validUserNameOnAction" prefHeight="31.0" prefWidth="256.0" promptText="UserName" translateX="1.0">
+               <font>
+                  <Font name="Sitka Text Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Hyperlink fx:id="hplForgotPassword" focusTraversable="false" layoutX="162.0" layoutY="389.0" onAction="#forgotYourPasswordOnAction" text="Forgot Your Password?">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#c25929" focusTraversable="false" layoutX="128.0" layoutY="339.0" onKeyPressed="#validPasswordOnAction" prefHeight="25.0" prefWidth="256.0" promptText="Password">
+               <font>
+                  <Font name="Sitka Text Bold" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="151.0" layoutY="468.0" prefHeight="51.0" prefWidth="178.0" styleClass="addBobOk" stylesheets="@../css/loginFormStyle.css" text="SIGN UP" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSignIn" buttonType="RAISED" focusTraversable="false" layoutX="149.0" layoutY="442.0" onAction="#signInOnAction" prefHeight="51.0" prefWidth="178.0" styleClass="addBobOk" stylesheets="@../css/loginFormStyle.css" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblCreateNewAcc" layoutX="161.0" layoutY="219.0" text="CREATE NEW ACCOUNT" textFill="#7f8c8d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSignIntoAcc" layoutX="148.0" layoutY="219.0" text="SIGN INTO YOUR ACCOUNT" textFill="#7f8c8d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="26.0" layoutX="75.0" layoutY="272.0" x="18.0">
+               <image>
+                  <Image url="@../assets/images/icons8-customer-32.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="33.0" layoutX="70.0" layoutY="338.0" x="18.0">
+               <image>
+                  <Image url="@../assets/images/icons8-lock-48.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtEmail" focusColor="#c25929" focusTraversable="false" labelFloat="true" layoutX="126.0" layoutY="397.0" prefHeight="31.0" prefWidth="256.0" promptText="Email" visible="false">
+               <font>
+                  <Font name="Sitka Text Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fx:id="imgEmail" fitHeight="23.0" fitWidth="26.0" layoutX="74.0" layoutY="403.0" visible="false" x="18.0">
+               <image>
+                  <Image url="@../assets/images/icons8-email-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sliderpane2" layoutX="469.0" prefHeight="600.0" prefWidth="158.0" style="-fx-background-color: #FFC38C;">
+         <children>
+            <Group layoutX="6.0" layoutY="-12.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/Rectangle%205.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="346.0" fitWidth="358.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/Rectangle%204.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="212.0" fitWidth="299.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/Rectangle%203.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="300.0" fitWidth="207.0" layoutX="206.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/Rectangle%202.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgApexLogo" fitHeight="68.0" fitWidth="264.0" layoutX="81.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/Apexlogo-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblWelcomeBack" layoutX="63.0" layoutY="228.0" text="WELCOME BACK" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbldis" layoutX="63.0" layoutY="306.0" text="The Forerunner Of The Nation's " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbldis2" layoutX="129.0" layoutY="338.0" text="Digital Education" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btnSliderSignIn" buttonType="RAISED" layoutX="121.0" layoutY="401.0" onMouseClicked="#slidinToSignInOnAction" prefHeight="51.0" prefWidth="178.0" styleClass="addBobOk" stylesheets="@../css/loginFormStyle.css" text="SIGN IN" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSliderSignUp" buttonType="RAISED" focusTraversable="false" layoutX="121.0" layoutY="401.0" onMouseClicked="#slidingToSignUpOnAction" prefHeight="51.0" prefWidth="178.0" styleClass="addBobOk" stylesheets="@../css/loginFormStyle.css" text="SIGN UP" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="lblWelcome" layoutX="113.0" layoutY="228.0" text="WELCOME" textFill="WHITE">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="40.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="179.0" layoutY="470.0" onAction="#exitOnAction" ripplerFill="#ffc28c00" text="EXIT" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

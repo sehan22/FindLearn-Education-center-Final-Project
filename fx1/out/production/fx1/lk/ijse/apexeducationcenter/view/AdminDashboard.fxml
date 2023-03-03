@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.AdminDashboardController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="1041.0" prefWidth="485.0" style="-fx-background-color: FFD2A9;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="315.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true" x="-10.0" y="19.0">
+               <image>
+                  <Image url="@../assets/images/Apexlogo-1%20-%20Copy.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="85.0" top="48.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="The Forerunner Of The Nation's Digital Education" translateY="21.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-home-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="215.0" onAction="#coursesOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="COURSES" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-knowledge-sharing-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="325.0" onAction="#batchOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="BATCH" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-teaching-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="89.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutY="435.0" onAction="#subjectOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="SUBJECTS" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-course-assign-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-logout-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="394.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="480.0" layoutY="-4.0" prefHeight="1046.0" prefWidth="1442.0">
+         <children>
+            <ImageView fitHeight="174.0" fitWidth="234.0" layoutX="1207.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" translateX="14.0">
+               <image>
+                  <Image url="@../assets/images/pngwing.com%20(1).png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1243.0" layoutY="812.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></JFXButton>
+            <Label layoutX="1231.0" layoutY="352.0" text="Sehan">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="1264.0" layoutY="416.0" text="admin">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1244.0" layoutY="664.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="VIEW">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1242.0" layoutY="514.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="secPaneContexct" layoutX="82.0" layoutY="50.0" prefHeight="904.0" prefWidth="1045.0" style="-fx-background-radius: 50; -fx-background-color: #FFF9F4;">
+               <children>
+                  <AnchorPane fx:id="CoursePaneContexct" layoutY="-5.0" prefHeight="958.0" prefWidth="1085.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;">
+                     <children>
+                        <AnchorPane fx:id="coursePaneContexct" layoutX="34.0" layoutY="49.0" prefHeight="876.0" prefWidth="1012.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="504.0" layoutY="260.0" onAction="#saveCourseOnAction" prefHeight="49.0" prefWidth="131.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="62.0" layoutY="74.0" text="Course ID : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="437.0" layoutY="74.0" text="Course Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="62.0" layoutY="169.0" text="Course Duration : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtCrsId" focusTraversable="false" layoutX="230.0" layoutY="67.0" prefHeight="44.0" prefWidth="170.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="364.0" layoutY="259.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Clear">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtCrsName" focusTraversable="false" layoutX="597.0" layoutY="67.0" prefHeight="44.0" prefWidth="352.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtCrsDuration" focusTraversable="false" layoutX="231.0" layoutY="162.0" prefHeight="44.0" prefWidth="170.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <TableView fx:id="tblViewAllCourses" focusTraversable="false" layoutX="65.0" layoutY="416.0" prefHeight="427.0" prefWidth="882.0">
+                                 <columns>
+                                    <TableColumn fx:id="colCourseId" prefWidth="101.0" text="Course Id" />
+                                    <TableColumn fx:id="colCourseName" prefWidth="404.0" text="Course Name" />
+                                    <TableColumn fx:id="colCourseDuration" prefWidth="233.0" text="Course Duration (Mounth)" />
+                                    <TableColumn fx:id="colCourseFees" prefWidth="143.0" text="Course Fees" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="353.0" onAction="#searchCourseOnAction" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                       <image>
+                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                       <stops>
+                                          <Stop color="#ed915f80" />
+                                          <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                          <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                          <Stop color="#f0956080" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <TextField focusTraversable="false" layoutX="295.0" layoutY="354.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." />
+                              <Label layoutX="437.0" layoutY="168.0" text="Course Fees : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtCrsFees" focusTraversable="false" layoutX="607.0" layoutY="162.0" prefHeight="44.0" prefWidth="343.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="468.0" layoutY="14.0" text="All Courses">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="batchPaneContexct" prefHeight="958.0" prefWidth="1088.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <Label layoutX="436.0" layoutY="7.0" text="Add New Batch...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="34.0" layoutY="44.0" prefHeight="876.0" prefWidth="1011.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="507.0" layoutY="324.0" onAction="#saveBatchOnAction" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="59.0" layoutY="252.0" text="Batch Year : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton buttonType="RAISED" layoutX="365.0" layoutY="324.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Clear">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtBatchName" layoutX="575.0" layoutY="66.0" prefHeight="44.0" prefWidth="352.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtBatchYear" layoutX="208.0" layoutY="245.0" prefHeight="43.0" prefWidth="186.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="437.0" layoutY="73.0" text="Batch Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="59.0" layoutY="74.0" text="Batch Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtBatchId" layoutX="208.0" layoutY="67.0" prefHeight="43.0" prefWidth="186.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXTextField>
+                              <TableView fx:id="tblViewAllBatch" focusTraversable="false" layoutX="65.0" layoutY="461.0" prefHeight="382.0" prefWidth="882.0">
+                                 <columns>
+                                    <TableColumn fx:id="colBatchId" prefWidth="101.0" text="Batch Id" />
+                                    <TableColumn fx:id="colSelectCourseId" prefWidth="101.0" text="Course Id" />
+                                    <TableColumn fx:id="colBatchName" prefWidth="339.0" text="Batch Name" />
+                                    <TableColumn fx:id="colBatchYear" prefWidth="166.0" text="Batch Year" />
+                                    <TableColumn fx:id="colBatchSeats" prefWidth="174.0" text="Batch Seats" />
+                                 </columns>
+                              </TableView>
+                              <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="401.0" onAction="#searchCourseOnAction" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                       <image>
+                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                       <stops>
+                                          <Stop color="#ed915f80" />
+                                          <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                          <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                          <Stop color="#f0956080" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <TextField focusTraversable="false" layoutX="295.0" layoutY="402.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." text="Batch Id...." />
+                              <Label layoutX="59.0" layoutY="162.0" text="Course Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSelectCourseId" layoutX="208.0" layoutY="155.0" onAction="#selectCourseNameOnAction" prefHeight="43.0" prefWidth="186.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtselectedCourseName" layoutX="580.0" layoutY="156.0" prefHeight="44.0" prefWidth="343.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="440.0" layoutY="162.0" text="Course Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="437.0" layoutY="252.0" text="Batch Seats : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtBatchSeats" layoutX="574.0" layoutY="245.0" prefHeight="43.0" prefWidth="186.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="SubjectPaneContexct" prefHeight="956.0" prefWidth="1088.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="35.0" layoutY="45.0" prefHeight="876.0" prefWidth="1011.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="506.0" layoutY="257.0" onAction="#saveSubjectOnAction" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="60.0" layoutY="72.0" text="Subject Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="434.0" layoutY="73.0" text="Subject Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="60.0" layoutY="169.0" text="Course Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtSubjectId" layoutX="230.0" layoutY="65.0" prefHeight="44.0" prefWidth="186.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="363.0" layoutY="257.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Clear">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtSubjectName" layoutX="609.0" layoutY="65.0" prefHeight="44.0" prefWidth="315.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <TextField focusTraversable="false" layoutX="294.0" layoutY="353.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." text="Batch Id...." />
+                              <JFXComboBox fx:id="cmbCourseIds" focusTraversable="false" layoutX="230.0" layoutY="160.0" onAction="#selectCmbItemOnAction" prefHeight="48.0" prefWidth="187.0" promptText="Select Course Id..." styleClass="combo-box" stylesheets="@../css/TableStyle.css" />
+                              <JFXTextField fx:id="txtCourseName" layoutX="609.0" layoutY="162.0" prefHeight="44.0" prefWidth="315.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="434.0" layoutY="169.0" text="Course Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="lblTitle" layoutX="436.0" layoutY="6.0" text="Add New Subject...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="275.0" layoutY="397.0" onAction="#searchCourseOnAction" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                 <image>
+                                    <Image url="@../assets/images/icons8-search-64.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                 <stops>
+                                    <Stop color="#ed915f80" />
+                                    <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                    <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                    <Stop color="#f0956080" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                        </JFXButton>
+                        <TableView fx:id="tblViewAllSubjects" focusTraversable="false" layoutX="99.0" layoutY="460.0" prefHeight="427.0" prefWidth="882.0" stylesheets="@../css/TableStyle.css">
+                           <columns>
+                              <TableColumn fx:id="colSubjectId" prefWidth="140.0" text="Subject Id" />
+                              <TableColumn fx:id="colSubjectName" prefWidth="140.0" text="Course Id" />
+                              <TableColumn fx:id="colSubCourseId" prefWidth="601.0" text="Subject Name" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="viewPaneContexct" layoutX="1.0" layoutY="-3.0" prefHeight="945.0" prefWidth="1074.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="63.0" layoutY="164.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+                        <Label fx:id="lblTitle1" layoutX="442.0" layoutY="83.0" prefHeight="36.0" prefWidth="158.0" text="ALL COURSES">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="updatePaneContext" layoutX="-1.0" layoutY="-1.0" prefHeight="958.0" prefWidth="1086.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="59.0" layoutY="181.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Separator layoutX="147.0" layoutY="105.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="5.0" />
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateCourseOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Course">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font></JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateBatchOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Batch">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font></JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateSubjectOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Subject">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font></JFXButton>
+                              <AnchorPane fx:id="updateCourseContextPane" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0" visible="false">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="74.0" text="Update Course" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchCourseId" layoutX="319.0" layoutY="69.0" prefHeight="36.0" prefWidth="300.0" promptText="Search Course Id..." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="65.0" onAction="#searchCourseOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateCourseName" layoutX="323.0" layoutY="215.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtUpdateCrsDuration" layoutX="323.0" layoutY="301.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="165.0" layoutY="221.0" text="Course Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="161.0" layoutY="306.0" text="Course Duration : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="165.0" layoutY="158.0" text="Course Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblCourseId" layoutX="323.0" layoutY="158.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="349.0" layoutY="458.0" onAction="#updateCourseDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="239.0" layoutY="458.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="466.0" layoutY="458.0" onAction="#deleteCourseDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateCrsFees" layoutX="322.0" layoutY="377.0" prefHeight="37.0" prefWidth="316.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="161.0" layoutY="382.0" text="Course Fees : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="updateBatchContextPane" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="93.0" text="Update Batch" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchBatchiDOnAction" layoutX="332.0" layoutY="88.0" prefHeight="36.0" prefWidth="287.0" promptText="Search Batch Id..." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="84.0" onAction="#searchBatchDetailsOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateBatchName" layoutX="298.0" layoutY="267.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtUpdateBatchYear" layoutX="298.0" layoutY="321.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="161.0" layoutY="273.0" text="Batch Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="161.0" layoutY="327.0" text="Batch Year : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="163.0" layoutY="169.0" text="Batch Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblBatchId" layoutX="300.0" layoutY="169.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="347.0" layoutY="453.0" onAction="#updateBatchDetailsOnACTION" prefHeight="48.0" prefWidth="94.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="238.0" layoutY="453.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="453.0" onAction="#deleteBatchDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateBatchSeats" layoutX="298.0" layoutY="376.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="161.0" layoutY="382.0" text="Batch Seats : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUpdateBatchCourseId" layoutX="298.0" layoutY="211.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="161.0" layoutY="217.0" text="Course Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="updateSubjectContextPane1" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0" visible="false">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="93.0" text="Update Subject" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchSubjectId" layoutX="332.0" layoutY="88.0" prefHeight="36.0" prefWidth="287.0" promptText="Search Subject Id..." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="84.0" onAction="#serachSubjectDetailsOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateSubjectName" layoutX="318.0" layoutY="354.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="163.0" layoutY="359.0" text="Subject Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="163.0" layoutY="276.0" text="Course Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="163.0" layoutY="202.0" text="Subject Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblSubjectId" layoutX="321.0" layoutY="202.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="349.0" layoutY="439.0" onAction="#updateSubjectDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="239.0" layoutY="439.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="lblUpdatePaneCourseId" layoutX="321.0" layoutY="277.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="464.0" layoutY="439.0" onAction="#deleteSubjectDetalsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="lblCommand" layoutX="439.0" layoutY="277.0" text="Select what you want to update..." />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="dashboardPaneContext" layoutX="1.0" layoutY="-3.0" prefHeight="958.0" prefWidth="1086.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;">
+                     <children>
+                        <AnchorPane layoutX="69.0" layoutY="114.0" prefHeight="731.0" prefWidth="948.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Pane layoutX="34.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="44.0" layoutY="32.0" text="All Courses" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane layoutX="32.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllCourses" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane layoutX="337.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllBatches" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane layoutX="644.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllSubjects" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children></Pane>
+                              <Pane layoutX="338.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="45.0" layoutY="32.0" text="All Batches" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="646.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="40.0" layoutY="32.0" text="All Subjects" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

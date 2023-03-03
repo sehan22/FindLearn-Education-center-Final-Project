@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPaneContext" prefHeight="1039.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@../css/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.HumanResourseManagerDashboardController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="1042.0" prefWidth="485.0" style="-fx-background-color: FFD2A9;">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="315.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true" x="-10.0" y="19.0">
+               <image>
+                  <Image url="@../assets/images/Apexlogo-1%20-%20Copy.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="85.0" top="48.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="The Forerunner Of The Nation's Digital Education" translateY="21.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="207.0" onAction="#dashboardBoardOnAction" prefHeight="89.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="DASHBOARD" textFill="#7f8c8d" translateY="77.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-home-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="114.0" layoutY="215.0" onAction="#teacherOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="TEACHER" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-training-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="55.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="325.0" onAction="#studentOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="STUDENT" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-teaching-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="64.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" focusTraversable="false" layoutX="77.0" layoutY="435.0" onAction="#employeeOnAction" prefHeight="74.0" prefWidth="352.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="EMPLOYEE" textFill="#7f8c8d" translateY="76.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-manager-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="4.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets right="34.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="91.0" layoutY="545.0" onAction="#logOutOnAction" prefHeight="18.0" prefWidth="151.0" ripplerFill="WHITE" styleClass="addBobOk" stylesheets="@../css/style.css" text="LogOut" textFill="#7f8c8d" translateY="-20.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" translateX="-7.0">
+                     <image>
+                        <Image url="@../assets/images/icons8-logout-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="394.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="480.0" layoutY="-4.0" prefHeight="1046.0" prefWidth="1442.0">
+         <children>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1239.0" layoutY="786.0" onAction="#exitOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="174.0" fitWidth="234.0" layoutX="1206.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/icons8-admin-settings-male-96.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1192.0" layoutY="333.0" text="Ranaweera">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="1182.0" layoutY="395.0" text="Human Resourse Manager">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1240.0" layoutY="638.0" onAction="#viewAllOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="VIEW">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="1238.0" layoutY="488.0" onAction="#updateOnAction" prefHeight="102.0" prefWidth="124.0" styleClass="addBobOk" stylesheets="@../css/style.css" text="UPDATE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="secPaneContexct" layoutX="61.0" layoutY="44.0" prefHeight="904.0" prefWidth="1045.0" style="-fx-background-radius: 50; -fx-background-color: #FFF9F4;">
+               <children>
+                  <AnchorPane fx:id="TeacherPaneContext" layoutY="-5.0" prefHeight="974.0" prefWidth="1096.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="34.0" layoutY="50.0" prefHeight="890.0" prefWidth="1029.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="583.0" layoutY="257.0" onAction="#saveTeacherOnAction" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="94.0" layoutY="67.0" text="Teacher ID : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="400.0" layoutY="67.0" text="Teacher Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="94.0" layoutY="166.0" text="Address : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtTeacherId" layoutX="211.0" layoutY="60.0" prefHeight="44.0" prefWidth="176.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="257.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;" text="Clear" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtTeacherName" layoutX="552.0" layoutY="60.0" prefHeight="44.0" prefWidth="383.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtTeacherAddress" layoutX="209.0" layoutY="155.0" prefHeight="44.0" prefWidth="182.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="94.0" layoutY="266.0" text="Telephone : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtTeacherTelephone" layoutX="211.0" layoutY="259.0" onKeyReleased="#validTeacherTelephoneOnAction" prefHeight="44.0" prefWidth="182.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="403.0" layoutY="166.0" text="Email Address : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtTeacherEmail" layoutX="552.0" layoutY="155.0" onKeyReleased="#validEmailOnAction" prefHeight="44.0" prefWidth="383.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="339.0" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                       <image>
+                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                       <stops>
+                                          <Stop color="#ed915f80" />
+                                          <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                          <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                          <Stop color="#f0956080" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <TextField focusTraversable="false" layoutX="267.0" layoutY="340.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." />
+                              <TableView fx:id="tblViewAllTeacher" focusTraversable="false" layoutX="14.0" layoutY="398.0" prefHeight="479.0" prefWidth="1000.0">
+                                 <columns>
+                                    <TableColumn fx:id="colTeacherId" prefWidth="101.0" text="Teacher Id" />
+                                    <TableColumn fx:id="colTeacherName" prefWidth="247.0" text="Teacher Name" />
+                                    <TableColumn fx:id="colTeacherAddress" prefWidth="165.0" text="Address" />
+                                    <TableColumn fx:id="colTeacherTelephone" prefWidth="161.0" text="Telephone" />
+                                    <TableColumn fx:id="colTeacherEmail" prefWidth="325.0" text="Teacher Email" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="453.0" layoutY="14.0" onDragDetected="#lblTopic" text="Add Teacher...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="studentPaneContext" prefHeight="969.0" prefWidth="1096.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="33.0" layoutY="44.0" prefHeight="888.0" prefWidth="1032.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="813.0" layoutY="265.0" onAction="#saveStudentOnAction" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="93.0" layoutY="67.0" text="Student Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="405.0" layoutY="67.0" text="Student Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="93.0" layoutY="167.0" text="Address : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtStudentId" layoutX="208.0" layoutY="60.0" prefHeight="44.0" prefWidth="182.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="678.0" layoutY="265.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;" text="Clear" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtStudentName" layoutX="557.0" layoutY="60.0" prefHeight="44.0" prefWidth="383.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtStudentAddress" layoutX="185.0" layoutY="160.0" prefHeight="44.0" prefWidth="212.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="93.0" layoutY="267.0" text="DOB : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtStudentDob" layoutX="179.0" layoutY="260.0" prefHeight="44.0" prefWidth="124.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="332.0" layoutY="275.0" text="Telephone : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtStudentTelephone" layoutX="452.0" layoutY="268.0" onKeyReleased="#validStudentTelephoneOnAction" prefHeight="44.0" prefWidth="199.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="405.0" layoutY="167.0" text="Email Address : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtStudentEmail" layoutX="557.0" layoutY="160.0" onKeyReleased="#validStudentEmailOnAction" prefHeight="44.0" prefWidth="383.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <TableView fx:id="tblViewAllStudents" focusTraversable="false" layoutX="15.0" layoutY="398.0" prefHeight="479.0" prefWidth="1000.0">
+                                 <columns>
+                                    <TableColumn fx:id="colStudentId" prefWidth="86.0" text="Student Id" />
+                                    <TableColumn fx:id="colStudentName" prefWidth="186.0" text="Student Name" />
+                                    <TableColumn fx:id="colStudentAddress" prefWidth="168.0" text="Address" />
+                                    <TableColumn fx:id="colStudentDob" prefWidth="145.0" text="DOB" />
+                                    <TableColumn fx:id="colStudentTelephone" prefWidth="155.0" text="Telephone" />
+                                    <TableColumn fx:id="colStudentEmail" prefWidth="259.0" text="Student Email" />
+                                 </columns>
+                              </TableView>
+                              <TextField focusTraversable="false" layoutX="268.0" layoutY="341.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." />
+                              <JFXButton buttonType="RAISED" layoutX="214.0" layoutY="340.0" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                       <image>
+                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                       <stops>
+                                          <Stop color="#ed915f80" />
+                                          <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                          <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                          <Stop color="#f0956080" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="442.0" layoutY="8.0" text="Add New Student...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="employeePaneContext" prefHeight="969.0" prefWidth="1096.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <Label fx:id="lblTitle" layoutX="413.0" layoutY="8.0" text="Add New Employee...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="29.0" layoutY="44.0" prefHeight="888.0" prefWidth="1038.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <JFXButton buttonType="RAISED" layoutX="588.0" layoutY="257.0" onAction="#saveEmployeeOnAction" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="98.0" layoutY="66.0" text="Employee Id : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="405.0" layoutY="66.0" text="Employee Name : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="98.0" layoutY="165.0" text="Address : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtEmpId" layoutX="227.0" layoutY="59.0" prefHeight="44.0" prefWidth="170.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="257.0" prefHeight="49.0" prefWidth="127.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;" text="Clear" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXTextField fx:id="txtEmpName" layoutX="570.0" layoutY="59.0" prefHeight="44.0" prefWidth="374.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXTextField fx:id="txtEmpAddress" layoutX="190.0" layoutY="158.0" prefHeight="44.0" prefWidth="212.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="405.0" layoutY="165.0" text="Date Of Birth : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtEmpDob" layoutX="570.0" layoutY="158.0" prefHeight="44.0" prefWidth="374.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label layoutX="98.0" layoutY="266.0" text="Telephone : ">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField fx:id="txtEmpTelephone" layoutX="209.0" layoutY="259.0" onKeyReleased="#validEmployeeTelephoneOnAction" prefHeight="44.0" prefWidth="202.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXButton buttonType="RAISED" layoutX="218.0" layoutY="341.0" prefHeight="35.0" prefWidth="33.0" style="-fx-background-radius: 50;">
+                                 <graphic>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                       <image>
+                                          <Image url="@../assets/images/icons8-search-64.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                                 <ripplerFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                       <stops>
+                                          <Stop color="#ed915f80" />
+                                          <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                          <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                          <Stop color="#f0956080" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </ripplerFill>
+                              </JFXButton>
+                              <TextField focusTraversable="false" layoutX="272.0" layoutY="341.0" prefHeight="35.0" prefWidth="476.0" promptText="Course Id...." />
+                              <TableView fx:id="tblViewAllEmployee" focusTraversable="false" layoutX="20.0" layoutY="399.0" prefHeight="479.0" prefWidth="1000.0">
+                                 <columns>
+                                    <TableColumn fx:id="colEmployeeId" prefWidth="101.0" text="Employee Id" />
+                                    <TableColumn fx:id="colEmployeeName" prefWidth="247.0" text="Employee Name" />
+                                    <TableColumn fx:id="colEmployeeDob" prefWidth="165.0" text="Employee DOB" />
+                                    <TableColumn fx:id="colEmployeeAddress" prefWidth="267.0" text="Employee Address" />
+                                    <TableColumn fx:id="colEmployeeTelephone" prefWidth="219.0" text="Employee Telephone" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="viewPaneContexct" layoutX="1.0" layoutY="-3.0" prefHeight="945.0" prefWidth="1074.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="63.0" layoutY="164.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <TableView layoutX="16.0" layoutY="126.0" prefHeight="427.0" prefWidth="882.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="lblTitle1" layoutX="457.0" layoutY="84.0" prefHeight="36.0" prefWidth="158.0" text="ALL Employees...">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="updatePaneContext" layoutX="-1.0" layoutY="-2.0" prefHeight="969.0" prefWidth="1096.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;" visible="false">
+                     <children>
+                        <AnchorPane layoutX="59.0" layoutY="181.0" prefHeight="570.0" prefWidth="915.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Separator layoutX="147.0" layoutY="105.0" orientation="VERTICAL" prefHeight="363.0" prefWidth="5.0" />
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="154.0" onAction="#updateTeacherOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Teacher">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="265.0" onAction="#updateStudentOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Student">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton focusTraversable="false" layoutX="31.0" layoutY="372.0" onAction="#updateEmployeeOnAction" prefHeight="45.0" prefWidth="86.0" styleClass="addBobOk1" stylesheets="@../css/style1.css" text="Employee">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <AnchorPane fx:id="updateTeacherContextPane" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0" visible="false">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="61.0" text="Update Teacher" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchTeacherId" layoutX="332.0" layoutY="56.0" prefHeight="36.0" prefWidth="287.0" promptText="Search Course Id..." text="Search Teacher Id...." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="52.0" onAction="#searchTeacherOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateTeacherName" layoutX="302.0" layoutY="173.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtUpdateTeacherAddress" layoutX="302.0" layoutY="233.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="174.0" layoutY="178.0" text="Teacher Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="174.0" layoutY="239.0" text="Address : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="174.0" layoutY="128.0" text="Teacher Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTeacherId" layoutX="302.0" layoutY="128.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="448.0" onAction="#updateTeacherDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="227.0" layoutY="448.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="454.0" layoutY="448.0" onAction="#deleteTeacherDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateTeacherTelephone" layoutX="302.0" layoutY="299.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="174.0" layoutY="302.0" text="Telephone : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUpdateTeacherEmail" layoutX="302.0" layoutY="363.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="174.0" layoutY="368.0" text="Email : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="updateStudentContextPane" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0" visible="false">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="61.0" text="Update Student" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchStudentId" layoutX="332.0" layoutY="56.0" prefHeight="36.0" prefWidth="287.0" promptText="Search Student Id..." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="52.0" onAction="#searchStudentDetailsOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateStudentName" layoutX="310.0" layoutY="176.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtUpdateStudentAddress" layoutX="310.0" layoutY="228.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="173.0" layoutY="182.0" text="Student Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="173.0" layoutY="234.0" text="Address : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="173.0" layoutY="132.0" text="Student Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblStudentId" layoutX="308.0" layoutY="132.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="335.0" layoutY="449.0" onAction="#updateStudentDetailsOnAction" prefHeight="48.0" prefWidth="94.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE" translateX="3.0">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="226.0" layoutY="449.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear" translateX="3.0">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="451.0" layoutY="449.0" onAction="#deleteStudentDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE" translateX="3.0">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateStudentDob" layoutX="310.0" layoutY="277.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="173.0" layoutY="283.0" text="DOB : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUpdateStudentTelephone" layoutX="310.0" layoutY="327.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="173.0" layoutY="333.0" text="Telephone : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUpdateStudentEmail" layoutX="310.0" layoutY="380.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="173.0" layoutY="386.0" text="Email : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="updateEmployeeContextPane" layoutX="117.0" layoutY="1.0" prefHeight="570.0" prefWidth="798.0" visible="false">
+                                 <children>
+                                    <Label layoutX="124.0" layoutY="61.0" text="Update Employee" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtSearchEmployeeId" layoutX="332.0" layoutY="56.0" prefHeight="36.0" prefWidth="287.0" promptText="Search Employee Id..." />
+                                    <JFXButton buttonType="RAISED" layoutX="629.0" layoutY="52.0" onAction="#searchEmployeeDetailsOnAction" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50;">
+                                       <graphic>
+                                          <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" translateX="3.0">
+                                             <image>
+                                                <Image url="@../assets/images/icons8-search-64.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                       <ripplerFill>
+                                          <LinearGradient endX="1.0" endY="1.0" startX="0.3523809523809524" startY="0.009523809523809525">
+                                             <stops>
+                                                <Stop color="#ed915f80" />
+                                                <Stop color="#ed935f80" offset="0.011494252873563218" />
+                                                <Stop color="#f7c9b280" offset="0.3470790378006873" />
+                                                <Stop color="#f0956080" offset="1.0" />
+                                             </stops>
+                                          </LinearGradient>
+                                       </ripplerFill>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateEmployeeDob" layoutX="334.0" layoutY="237.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="149.0" layoutY="242.0" text="Employee Dob : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="149.0" layoutY="191.0" text="Employee Name : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="149.0" layoutY="140.0" text="Employee Id : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblEmployeeId" layoutX="334.0" layoutY="141.0" prefHeight="25.0" prefWidth="174.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton buttonType="RAISED" layoutX="348.0" layoutY="417.0" onAction="#updateEmployeeDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #1abc9c; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="238.0" layoutY="417.0" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Clear">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="463.0" layoutY="417.0" onAction="#deleteEmployeeDetailsOnAction" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUpdateEmployeeName" layoutX="334.0" layoutY="186.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="txtUpdateEmployeeAddress" layoutX="334.0" layoutY="289.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="149.0" layoutY="294.0" text="Employee Address : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUpdateEmployeeTelephone" layoutX="334.0" layoutY="340.0" prefHeight="37.0" prefWidth="315.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <Label layoutX="149.0" layoutY="345.0" text="Employee Telephone : ">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="lblCommand" layoutX="439.0" layoutY="277.0" text="Select what you want to update..." />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="dashboardPaneContext" prefHeight="969.0" prefWidth="1096.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 50;">
+                     <children>
+                        <AnchorPane layoutX="74.0" layoutY="119.0" prefHeight="731.0" prefWidth="948.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <children>
+                              <Pane layoutX="34.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="36.0" layoutY="32.0" text="All Teachers" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="32.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllTeachers" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="337.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllStudents" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="644.0" layoutY="324.0" prefHeight="303.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label fx:id="lblAllEmployees" contentDisplay="CENTER" layoutX="107.0" layoutY="79.0" text="2" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="100.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="338.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="36.0" layoutY="32.0" text="All Students" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="646.0" layoutY="105.0" prefHeight="114.0" prefWidth="271.0" style="-fx-background-color: #FFF9F4; -fx-background-radius: 10;">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="21.0" layoutY="32.0" text="All Employees" textAlignment="CENTER" textFill="#7f8c8d">
+                                       <font>
+                                          <Font name="System Bold" size="35.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

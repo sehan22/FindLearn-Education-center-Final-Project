@@ -1,0 +1,54 @@
+.addBobOk8{
+    -fx-background-radius: 50;
+    -fx-border-color: #95A5A6;
+    -fx-border-radius: 50;
+    -fx-border-width: 2;
+    -fx-text-alignment: center;
+}
+.addBobOk8:hover{
+    -fx-background-radius: 50;
+    -fx-border-color: #95A5A6;
+    -fx-border-radius: 50;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+
+.addBobOk{
+    -fx-background-color:  #FFD2A9;
+    -fx-background-radius: 30;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+.addBobOk:hover{
+    -fx-background-color:   #FFC38C;
+    -fx-background-radius: 30;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+
+.addBobOk5{
+    -fx-background-color: #FFC38C;
+    -fx-background-radius: 30;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+.addBobOk5:hover{
+    -fx-background-color: #FFD2A9;
+    -fx-background-radius: 30;
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment: center;
+}
+

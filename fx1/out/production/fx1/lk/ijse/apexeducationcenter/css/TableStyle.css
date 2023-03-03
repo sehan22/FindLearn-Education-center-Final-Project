@@ -1,0 +1,33 @@
+.table-view:focused{
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header{
+    -fx-size:18px;
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.table-view .table-row-cell{
+    -fx-font-size: 18px;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+.table-view .table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color:#FFD2A9;
+}
+
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+}
+.combo-box{
+    -fx-font-size: 20px;
+}

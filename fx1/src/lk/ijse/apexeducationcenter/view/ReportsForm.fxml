@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportsPaneContext" prefHeight="192.0" prefWidth="901.0" style="-fx-background-color: FFF9F3; -fx-border-color: FFC38C; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.apexeducationcenter.controller.ReportsFormController">
+   <children>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="55.0" layoutY="26.0" onAction="#viewTeacherSalaryReportOnAction" prefHeight="104.0" prefWidth="247.0" ripplerFill="WHITE" style="-fx-background-color: FFC38C; -fx-background-radius: 30;" text="Teachers Salary Report">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="327.0" layoutY="26.0" onAction="#viewEmployeeSplaryReportOnAction" prefHeight="104.0" prefWidth="247.0" ripplerFill="WHITE" style="-fx-background-color: FFC38C; -fx-background-radius: 30;" text="Employee Salary Report">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="600.0" layoutY="26.0" onAction="#viewPaymentReportOnAction" prefHeight="104.0" prefWidth="247.0" ripplerFill="WHITE" style="-fx-background-color: FFC38C; -fx-background-radius: 30;" text="Payments Report">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" focusTraversable="false" layoutX="428.0" layoutY="149.0" onAction="#closeOnAction" text="EXIT">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="TRANSPARENT" />
+                  <Stop color="#ffffff00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>
